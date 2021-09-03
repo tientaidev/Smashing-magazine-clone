@@ -453,7 +453,19 @@ aside p {
     .main-articles-section {
         float: none;
         width: 80%;
+        margin-left: auto;
+        margin-right: auto;
         white-space: normal;
+    }
+
+    .main-articles-section article img {
+        width: 20%;
+        height: 20%;
+    }
+    
+    .main-articles-section article.main-article img {
+        width: 30%;
+        height: 30%;
     }
 
     .three-cards-section {
@@ -494,6 +506,27 @@ aside p {
     .site-navigation .search-box,
     .topics-navigation {
         display: none;
+    }
+
+    .main-articles-section article img {
+        display: none;
+    }
+
+    .main-articles-section article {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .main-articles-section article.main-article img {
+        display: none;
+    }
+
+    .latest-post-image {
+        display: none;
+    }
+
+    .card {
+        width: 80%;
     }
 }
 
