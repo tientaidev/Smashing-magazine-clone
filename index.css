@@ -289,7 +289,7 @@ aside p {
 .card {
     /* box model */
     border: 1px solid #000;
-    max-width: 274px;
+    width: 20%;
 
     /* positioning */
     padding: 50px 30px;
@@ -335,17 +335,17 @@ aside p {
     display: flex;
     flex-wrap: wrap;
 
-    margin-left: 100px;
+    /* margin-left: 100px; */
     margin-bottom: 100px;
 }
 
 .latest-post {
     display: flex;
 
-    max-width: 580px;
-    width: 580px;
+    width: 40%;
     margin-bottom: 150px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .latest-post-image {
@@ -387,8 +387,8 @@ aside p {
     color: #fff;
     text-align: center;
 
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 30%;
+    padding-right: 30%;
     margin-bottom: 850px;
 }
 
@@ -428,8 +428,8 @@ aside p {
 
 .magazine-topics-section {
     background: #595959;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 30%;
+    padding-right: 30%;
     text-align: center;
     color: #fff;
 }
@@ -445,7 +445,58 @@ aside p {
 
 .magazine-topics {
     line-height: 2;
+    padding-bottom: 70px;
 }
+
+/* responsive design */
+@media screen and (max-width: 1200px) {
+    .main-articles-section {
+        float: none;
+        width: 80%;
+        white-space: normal;
+    }
+
+    .three-cards-section {
+        display: block;
+    }
+
+    .card {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
+        text-align: center;
+
+    }
+
+    aside {
+        display: none;
+    }
+
+    .latest-post {
+        width: 80%;
+    }
+
+    .workshop-ad {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .magazine-topics-section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .site-navigation a,
+    .site-navigation .search-box,
+    .topics-navigation {
+        display: none;
+    }
+}
+
 
 
 
